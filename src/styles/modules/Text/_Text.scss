@@ -1,0 +1,54 @@
+@font-face {
+	font-family: MullerExtraBoldDEMO;
+	src: url("fonts/Muller-ExtraBold-DEMO.ttf");
+}
+
+@font-face {
+	font-family: MullerThinDEMO;
+	src: url("fonts/Muller-Thin-DEMO.ttf");
+}
+
+.Text {
+
+	&-navText {
+
+		&--navTextModifier {
+			font-family: MullerExtraBoldDEMO;
+			font-size: 15px;
+			display: inline-block;
+			line-height: 1;
+			text-decoration:none;
+			cursor: pointer;
+			position:relative;
+		}
+
+		&--navTextModifier:after {
+			background-color: #b8a47e;
+			display: block;
+			content: "";
+			height: 2px;
+			width: 0%;
+			left: 50%;
+			position: absolute;
+			-webkit-transition: width .3s ease-in-out;
+			-moz--transition: width .3s ease-in-out;
+			transition: width .3s ease-in-out;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
+		}
+
+		&--navTextModifier:hover:after,
+		&--navTextModifier:focus:after {
+			width: 100%;
+		}
+
+		&--navTextModifier:nth-child(-n+2) {
+			color: #000000;
+		}
+
+		&--navTextModifier:nth-child(n+3) {
+			color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.Header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.Header-logo--logoSize {
+  margin-left: 11px;
+  height: 146px;
+  width: 219px; }
+
+.Header-navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .Header-navList--listPosition {
+    margin-top: 64px;
+    margin-left: 142px;
+    width: 758px; }
+
+@font-face {
+  font-family: MullerExtraBoldDEMO;
+  src: url("fonts/Muller-ExtraBold-DEMO.ttf"); }
+
+@font-face {
+  font-family: MullerThinDEMO;
+  src: url("fonts/Muller-Thin-DEMO.ttf"); }
+
+.Text-navText--navTextModifier {
+  font-family: MullerExtraBoldDEMO;
+  font-size: 15px;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative; }
+
+.Text-navText--navTextModifier:after {
+  background-color: #b8a47e;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.Text-navText--navTextModifier:hover:after, .Text-navText--navTextModifier:focus:after {
+  width: 100%; }
+
+.Text-navText--navTextModifier:nth-child(-n+2) {
+  color: #000000; }
+
+.Text-navText--navTextModifier:nth-child(n+3) {
+  color: #ffffff; }

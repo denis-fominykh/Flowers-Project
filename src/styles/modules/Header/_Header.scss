@@ -1,0 +1,27 @@
+.Header {
+
+	&-content {
+		display: flex;
+	}
+
+	&-logo {
+
+		&--logoSize {
+			margin-left: 11px;
+			height: 146px;
+			width: 219px;
+		}
+	}
+
+	&-navList {
+		display: flex;
+		justify-content: space-between;
+
+		&--listPosition {
+			margin-top: 64px;
+			margin-left: 142px;
+			width: 758px;
+		}
+	}
+
+}
