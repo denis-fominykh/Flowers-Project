@@ -2,25 +2,35 @@
 
 	&-content {
 		display: flex;
+		position: absolute;
+		z-index: 5;
+		width: 100%;
 	}
 
 	&-logo {
 
+		/* 0,026 */
+
 		&--logoSize {
-			margin-left: 11px;
-			height: 146px;
-			width: 219px;
+			margin-left: 0.5%; /* 8 */
+			height: 7.5%; /* 109 */
+			width: 11.3%; /* 164 */
 		}
 	}
 
+	&-navigation {
+
+		&--navigationSize {
+			width: 53.4%; /* 568px 39.4%  53.4%*/
+		}
+	}
 	&-navList {
 		display: flex;
 		justify-content: space-between;
 
 		&--listPosition {
-			margin-top: 64px;
-			margin-left: 142px;
-			width: 758px;
+			margin-top: 3.3%; /* 48 */
+			margin-left: 7.3%; /* 106 */
 		}
 	}
 
