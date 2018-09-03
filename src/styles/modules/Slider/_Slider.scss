@@ -71,7 +71,7 @@
 		}
 
 		&--prevButton:hover, &--nextButton:hover {
-			background-color: rgba(0,0,0,0.6);
+			background-color: rgba(184,164,126,0.4); /* rgba(184,164,126,0.4) */
 		}
 	}
 
@@ -92,7 +92,7 @@
 }
 
 .active, Slider-dotElement--dotModifier:hover {
-	background-color: #717171;
+	background-color: #b8a47e; /* #717171 */
 }
 
 @-webkit-keyframes fade {
