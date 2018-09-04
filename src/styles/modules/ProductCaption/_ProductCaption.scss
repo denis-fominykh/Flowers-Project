@@ -1,0 +1,43 @@
+.ProductCaption {
+
+	&-productCaptionContainer {
+
+		&--productCaptionModifier {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&--productCaptionHeight {
+			margin-top: 7%;
+			position: relative;
+			height: 0;
+			padding-top: 43.2%;
+		}
+	}
+
+	&-productImg {
+
+		&--productImgSize {
+			position: relative;
+			width: 67%;
+			z-index: 2;
+		}
+	}
+
+	&-descriptionBlock {
+
+		&--descriptionBlockSize {
+			margin-right: 10%;
+			margin-top: 6.5%;
+			position: absolute;
+			right: 0;
+			width: 47%;
+			height: 38%;
+			border: 2px solid #b8a47e;
+			z-index: 3;
+		}
+	}
+}

@@ -1,5 +1,22 @@
 .Slider {
 
+	&-sliderContainer {
+
+		&--sliderContainerModifier {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&--sliderContainerHeight {
+			position: relative;
+			height: 0;
+			padding-top: 43.2%;
+		}
+	}
+
 	&-slideshowContainer {
 
 		&--slideshowModifier {
@@ -28,7 +45,7 @@
 
 		&--imgModifier {
 			vertical-align: middle;
-			width:100%;
+			width: 65vw; /* 100 %*/
 		}
 	}
 
@@ -46,7 +63,7 @@
 	&-sliderButtonContainer {
 
 		&--sliderButtonModifier {
-			margin-right: 16px;
+			margin-right: 1vw; /* 16px */
 		}
 	}
 
@@ -56,11 +73,11 @@
 			cursor: pointer;
 			position: relative;
 			width: auto;
-			padding: 16px;
-			margin-top: -22px;
+			padding: 1.15vw; /* 16px */
+			/*margin-top: -22px;*/
 			color: black;
 			font-weight: bold;
-			font-size: 18px;
+			font-size: 1.25vw; /* 18px */
 			transition: 0.6s ease;
 			border-radius: 100px;
 		}
@@ -80,9 +97,9 @@
 
 		&--dotModifier {
 			cursor: pointer;
-			height: 15px;
-			width: 15px;
-			margin: 0 2px;
+			height: 1vw; /* 15px */
+			width: 1vw; /* 15px */
+			margin: 1px 2px;
 			background-color: #bbb;
 			border-radius: 50%;
 			display: inline-block;
