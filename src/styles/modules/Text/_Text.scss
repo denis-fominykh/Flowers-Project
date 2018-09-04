@@ -1,56 +1,56 @@
 @font-face {
-	font-family: MullerExtraBoldDEMO;
+	font-family: "MullerExtraBoldDEMO";
 	src: url("fonts/Muller-ExtraBold-DEMO.eot");
-	src: local('☺'),
-	url("fonts/Muller-ExtraBold-DEMO.eot") format("embedded-opentype"),
-	url("fonts/Muller-ExtraBold-DEMO.woff") format("woff"),
-	url("fonts/Muller-ExtraBold-DEMO.woff2") format("woff2"),
-	url("fonts/Muller-ExtraBold-DEMO.ttf") format("truetype"),
-	url("fonts/Muller-ExtraBold-DEMO.svg") format("svg");
+	src: url("fonts/Muller-ExtraBold-DEMO.eot?#iefix") format("embedded-opentype"),
+		url("fonts/Muller-ExtraBold-DEMO.woff") format("woff"),
+		url("fonts/Muller-ExtraBold-DEMO.woff2") format("woff2"),
+		url("fonts/Muller-ExtraBold-DEMO.ttf") format("truetype"),
+		url("fonts/Muller-ExtraBold-DEMO.otf") format("opentype"),
+		url("fonts/Muller-ExtraBold-DEMO.svg") format("svg");
 }
 
 @font-face {
-	font-family: MullerThinDEMO;
+	font-family: "MullerThinDEMO";
 	src: url("fonts/Muller-Thin-DEMO.eot");
-	src: local('☺'),
-	url("fonts/Muller-Thin-DEMO.eot") format("embedded-opentype"),
-	url("fonts/Muller-Thin-DEMO.woff") format("woff"),
-	url("fonts/Muller-Thin-DEMO.woff2") format("woff2"),
-	url("fonts/Muller-Thin-DEMO.ttf") format("truetype"),
-	url("fonts/Muller-Thin-DEMO.svg") format("svg");
+	src: url("fonts/Muller-Thin-DEMO.eot?#iefix") format("embedded-opentype"),
+		url("fonts/Muller-Thin-DEMO.woff") format("woff"),
+		url("fonts/Muller-Thin-DEMO.woff2") format("woff2"),
+		url("fonts/Muller-Thin-DEMO.ttf") format("truetype"),
+		url("fonts/Muller-Thin-DEMO.otf") format("opentype"),
+		url("fonts/Muller-Thin-DEMO.svg") format("svg");
 }
 
 @font-face {
-	font-family: Montserrat-Bold;
+	font-family: "Montserrat-Bold";
 	src: url("fonts/Montserrat-Bold.eot");
-	src: local('☺'),
-	url("fonts/Montserrat-Bold.eot") format("embedded-opentype"),
-	url("fonts/Montserrat-Bold.woff") format("woff"),
-	url("fonts/Montserrat-Bold.woff2") format("woff2"),
-	url("fonts/Montserrat-Bold.ttf") format("truetype"),
-	url("fonts/Montserrat-Bold.svg") format("svg");
+	src: url("fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+		url("fonts/Montserrat-Bold.woff") format("woff"),
+		url("fonts/Montserrat-Bold.woff2") format("woff2"),
+		url("fonts/Montserrat-Bold.ttf") format("truetype"),
+		url("fonts/Montserrat-Bold.otf") format("opentype"),
+		url("fonts/Montserrat-Bold.svg") format("svg");
 }
 
 @font-face {
-	font-family: Montserrat-Light;
+	font-family: "Montserrat-Light";
 	src: url("fonts/Montserrat-Light.eot");
-	src: local('☺'),
-	url("fonts/Montserrat-Light.eot") format("embedded-opentype"),
-	url("fonts/Montserrat-Light.woff") format("woff"),
-	url("fonts/Montserrat-Light.woff2") format("woff2"),
-	url("fonts/Montserrat-Light.ttf") format("truetype"),
-	url("fonts/Montserrat-Light.svg") format("svg");
+	src: url("fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"),
+		url("fonts/Montserrat-Light.woff") format("woff"),
+		url("fonts/Montserrat-Light.woff2") format("woff2"),
+		url("fonts/Montserrat-Light.ttf") format("truetype"),
+		url("fonts/Montserrat-Light.otf") format("opentype"),
+		url("fonts/Montserrat-Light.svg") format("svg");
 }
 
 @font-face {
-	font-family: Montserrat-Regular;
+	font-family: "Montserrat-Regular";
 	src: url("fonts/Montserrat-Regular.eot");
-	src: local('☺'),
-	url("fonts/Montserrat-Regular.eot") format("embedded-opentype"),
-	url("fonts/Montserrat-Regular.woff") format("woff"),
-	url("fonts/Montserrat-Regular.woff2") format("woff2"),
-	url("fonts/Montserrat-Regular.ttf") format("truetype"),
-	url("fonts/Montserrat-Regular.svg") format("svg");
+	src: url("fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+		url("fonts/Montserrat-Regular.woff") format("woff"),
+		url("fonts/Montserrat-Regular.woff2") format("woff2"),
+		url("fonts/Montserrat-Regular.ttf") format("truetype"),
+		url("fonts/Montserrat-Regular.otf") format("opentype"),
+		url("fonts/Montserrat-Regular.svg") format("svg");
 }
 
 .Text {
@@ -58,7 +58,7 @@
 	&-navText {
 
 		&--navTextModifier {
-			font-family: MullerExtraBoldDEMO;
+			font-family: "MullerExtraBoldDEMO";
 			font-size: 1vw;
 			display: inline-block;
 			line-height: 1;
@@ -114,7 +114,7 @@
 		}
 
 		&--imgText {
-			font-family: MullerThinDEMO;
+			font-family: "MullerThinDEMO";
 			font-size: 1.4vw;
 			margin-bottom: 36%;
 			color: black;
@@ -122,7 +122,7 @@
 		}
 
 		&--imgTextСaption{
-			font-family: MullerExtraBoldDEMO;
+			font-family: "MullerExtraBoldDEMO";
 			font-size: 5.55vw; /* 80px */
 			margin-bottom: 26%;
 			color: #b8a47e;
@@ -138,7 +138,7 @@
 		}
 
 		&--productCaptionHeading {
-			font-family: Montserrat-Bold;
+			font-family: "Montserrat-Bold";
 			font-size: 2.7vw;
 			margin-top: 12.5%;
 			margin-right: 34.5%;
@@ -146,7 +146,7 @@
 		}
 
 		&--productCaptionText {
-			font-family: Montserrat-Regular;
+			font-family: "Montserrat-Regular";
 			font-size: 1.7vw;
 			margin-top: 16%;
 			margin-right: 34.85%;
@@ -154,7 +154,7 @@
 		}
 
 		&--productCaptionDescription {
-			font-family: Montserrat-Regular;
+			font-family: "Montserrat-Regular";
 			width: 19%;
 			color: #a7a7a7;
 			margin-top: 10%;
