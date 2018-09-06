@@ -1,0 +1,199 @@
+html {
+	overflow-x: hidden;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+// maximum number of slides the carousel can have
+$number-of-slides: 10;
+
+.SliderCarousel {
+
+	&-sliderCarouselContainer {
+
+		&--sliderCarouselContainerHeight {
+			position: relative;
+			height: 0;
+			padding-top: 20%; /*43.2*/
+		}
+
+		&--sliderCarouselContainerModifier {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&-carouselContainer {
+
+		&--carouselContainerModifier {
+			display: flex;
+			position: absolute;
+			align-items: center;
+			left: 0;
+			right: 0;
+			/*
+			top: 0;
+			bottom: 0;
+			*/
+		}
+	}
+
+	&-carouselBox {
+
+		&--carouselBoxModifier {
+			min-width: 62.5%; /* 900px */ /* 62.5% */
+			max-width: 85.83%; /* 1236px */ /* 85.83% */
+			padding-left: 3.34%; /* 48px */ /* 3.34% */
+			padding-right: 3.34%; /* 48px */ /* 3.34% */
+			/*
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			*/
+		}
+	}
+
+	&-carouselActivator {
+
+		&--activatorModifier {
+			display: none;
+		}
+	}
+
+	&-carouselControls {
+
+		&--carouselControlsModifier {
+			display: none;
+			align-items: center;
+			justify-content: space-between;
+			position: absolute;
+			top: 0;
+			right: 1.12%; /* 16px */ /* 1.12% */
+			left: 1.12%; /* 16px */ /* 1.12% */
+			bottom: 0;
+
+			&:first-of-type {
+				justify-content: flex-end;
+			}
+
+			&:last-of-type {
+				justify-content: flex-start;
+			}
+		}
+	}
+
+	&-carouselControl {
+
+		&--carouselControlForward, &--carouselControlBackward {
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			background-color: #fff;
+			color: #3d414a;
+			border-radius: 100%;
+			box-shadow: 0 2px 10px 0 rgba(33,34,36,0.3);
+			font-size: 1.5vw; /* 24px */
+			height: 3.3vw; /* 48px */
+			justify-content: center;
+			transition: 0.3s all;
+			width: 3.34%; /* 48px */ /* 3.34% */
+			z-index: 1;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+
+	&-carouselScreen {
+
+		&--carouselScreenModifier {
+			/*
+			overflow: hidden;
+			*/
+			margin-left: -1.12%; /* -16px */ /* -1.12% */
+			margin-right: -1.12%; /* -16px */ /* -1.12% */
+		}
+	}
+
+	&-carouselTrack {
+
+		&--carouselTrackModifier{
+			// font size 0 to remove space between the slides
+			// https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+			font-size: 0;
+			transition: all 0.3s ease 0s;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+
+	&-carouselItem {
+
+		&--itemModifier {
+			display: inline-flex;
+			padding-left: 1.12%; /* 16px */ /* 1.12% */
+			padding-right: 1.12%; /* 16px */ /* 1.12% */
+			vertical-align: top;
+			white-space: normal;
+		}
+	}
+
+	&-carouselContent {
+
+		&--carouselContentModifier {
+			color: #fff;
+			display: flex;
+			font-family: Helvetica;
+			font-weight: 100;
+			align-items: center;
+			justify-content: center;
+			text-transform: uppercase;
+			border-radius: 3px;
+			font-size: 56px;
+			height: 17vw; /* 250px */
+			width: 17vw; /* 100% */
+			position: relative;
+			z-index: 1;
+		}
+
+		&--carouselContentBorder {
+			position: absolute;
+			z-index: 3;
+			height: 62%;
+			width: 20.5%;
+			border: 2px solid #b8a47e;
+			margin-left: 1.5%;
+			margin-top: 1%;
+		}
+
+		&--carouselContentBuyBorder {
+			position: absolute;
+			z-index: 3;
+			height: 20%;
+			width: 10.5%;
+			border: 2px solid #b8a47e;
+			margin-left: 11.5%;
+			margin-top: 15%;
+		}
+	}
+}
+
+@for $i from 1 through $number-of-slides {
+	.SliderCarousel-carouselActivator:nth-of-type(#{$i}):checked
+	~ .SliderCarousel-carouselControls:nth-of-type(#{$i}) {
+		display: flex;
+	}
+
+	.SliderCarousel-carouselActivator:nth-of-type(#{$i}):checked
+	~ .SliderCarousel-carouselScreen
+	.SliderCarousel-carouselTrack {
+		transform: translateX(#{(1 - $i) * 100%});
+	}
+}
+
