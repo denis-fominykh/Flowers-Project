@@ -25,6 +25,13 @@
 			width: 67%;
 			z-index: 2;
 		}
+
+		&--productImgSizeRight {
+			position: relative;
+			width: 67%;
+			z-index: 2;
+			float: right;
+		}
 	}
 
 	&-descriptionBlock {
@@ -36,7 +43,18 @@
 			right: 0;
 			width: 47%;
 			height: 48%; /* 38% */
-			border: 2px solid #b8a47e;
+			border: 0.15vw solid #b8a47e;
+			z-index: 3;
+		}
+
+		&--descriptionBlockSizeRight {
+			margin-left: 10%;
+			margin-top: 6.5%;
+			position: absolute;
+			left: 0;
+			width: 47%;
+			height: 48%; /* 38% */
+			border: 0.15vw solid #b8a47e;
 			z-index: 3;
 		}
 	}
